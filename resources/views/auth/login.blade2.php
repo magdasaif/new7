@@ -26,26 +26,13 @@
                                 @enderror
                             </div>
 
-
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
+-->
+                            <label for="phone" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
 
                             <div class="col-md-6">
                                 <input id="phone" type="text" class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autofocus>
 
                                 @error('phone')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-
--->
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email or Phone') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="identify" type="text" class="form-control @error('identify') is-invalid @enderror" name="identify" value="{{ old('identify') }}" required>
-
-                                @error('identify')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
